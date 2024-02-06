@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💙¿Quieres ser mi San Valentin ?💙</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <script>
+        var tituloOriginal = document.title; // Lo guardamos para restablecerlo más tarde
+        window.onblur = function () { // Si el usuario se va a otro lado...
+            document.title = "Hey, vuelve aquí y dale a 'sí'"; // Cambiamos el título
+        }
+
+        window.onfocus = function () {
+            document.title = tituloOriginal; // Si el usuario vuelve restablecemos el título
+        }
+    </script>
+</head>
+
+<body>
+    <div class="popup-card">
+
+        <div class="boton">
+
+            <button id="close-btn" style="cursor: pointer;width: 100px;margin-right: -5px;
+      margin-top: -4px;">
+
+                <span class="material-symbols-rounded close-icon"> X </span>
+
+            </button>
+        </div>
+        <p class="mensaj">
+            Para una mejor experiencia activa el modo <b style="color: red;" class="fontnetf">NETFLX</b> y burger y pon la
+            <b>música</b>.
+            
+        </p>
+
+        <div class="botton">
+            <button class="butun">
+                <h2><b class="netf" style="color:red;">NETFLIX</b></h2>
+            </button>
+        </div>
+
+        <div class="playpause">
+            <div class="button">
+                <h2><a class="btn" id="nyan-btn" style="color: transparent;">
+                        <h3>o</h3>/.
+                    </a></h2>
+            </div>
+        </div>
+    </div>
+    <div id="open-btn"></div>
+    <div class="contenedor">
+        <div class="corazon"></div>
+        <div class="corazon2"></div>
+        <div class="corazon3"></div>
+        <div class="corazon4"></div>
+        <div class="corazon5"></div>
+        <div class="borde">
+            <div class="pregunta">
+                <h1><b>💙¿Quieres ser mi San Valentin?💙</h1>
+            </div>
+            <div class="espacio">
+                <h1><b>&nbsp;</h1>
+                <h1><b>&nbsp;</h1>
+                <h1><b>&nbsp;</h1>
+            </div>
+            <button type="button" id="si" onclick="">
+                <h3><b>&nbsp;Sí quiero 😘</b></h3>
+            </button>
+            <button type="button" id="no" onmouseover="">
+                <h3><b>&nbsp;No quiero 💔</b></h3>
+            </button>
+        </div>
+        <div id="modal_container" class="modal-container">
+            <div class="modal">
+                <h1>Sabía que dirías que sí ;) </h1>
+                <p>
+
+                    ¡Hola amor! 💙✨ En este Día de San Valentín quiero expresarte lo especial que eres para mí. En estos
+                    dos increíbles años juntos, hemos compartido risas, aventuras y momentos inolvidables. 😊💑
+                    Prometo seguir siendo el chaval de 20 años que te hace reír con sus bromas tontas y que te quiero muchisisisisimo aunque 
+                    no pueda todavia hacer todo lo que te sale en tiktok. 😄💖
+                    💙💙💙💙💙💙💙¡Feliz San Valentín, mi amor te amooooo!💙💙💙💙💙💙💙💙💙💙
+
+
+                </p>
+                <button id="close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    <audio id="nyan" src="musica.mp3" preload="metadata" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="Untitled-1.js"></script>
+</body>
+
+</html>
